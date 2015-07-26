@@ -107,3 +107,4 @@ data2<-rename(data2,Subjects=Group.1,Activities = Group.2)
 
 ##export the table
 write.table(data2,"export.txt",row.names=FALSE)
+data2
