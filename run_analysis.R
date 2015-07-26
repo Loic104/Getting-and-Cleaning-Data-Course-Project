@@ -77,29 +77,29 @@ for(x in names(data)){
       var="StandardDeviationOf"
     }
     if(grepl("Body",x)){
-      var = paste(var,"Body") 
+      var = paste(var,"Body",sep="") 
     }else{
-      var = paste(var,"Gravity")
+      var = paste(var,"Gravity",sep="")
     }
     if(grepl("Acc",x)){
-      var = paste(var,"Acceleration") 
+      var = paste(var,"Acceleration",sep="") 
     }else{
-      var = paste(var,"Gyrospic")
+      var = paste(var,"Gyrospic",sep="")
     }
     if(grepl("Jerk",x)){
-      var = paste(var,"Jerk")
+      var = paste(var,"Jerk",sep="")
     }
     if(grepl("Mag",x)){
-      var = paste(var,"Magnitude")
+      var = paste(var,"Magnitude",sep="")
     }
     last=substr(x,nchar(x),nchar(x))
     if(last=="X" || last=="Y" || last=="Z"){
-      var = paste(var,"In",last,"Direction")
+      var = paste(var,"In",last,"Direction",sep="")
     }
     if(substr(x,1,1)=="t"){
-      var = paste(var,"InTemporalDomain")
+      var = paste(var,"InTemporalDomain",sep="")
     }else{
-      var = paste(var,"InFrequencyDomain")
+      var = paste(var,"InFrequencyDomain",sep="")
     }
     
     names(data)[names(data) == x]<-var
