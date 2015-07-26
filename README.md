@@ -3,6 +3,7 @@ The purpose of this project is to collect, work with, and clean a data set.
 
 #Transformation of the data
 The raw data was transformed in the following way:
+
 1. The feature vector X, the subject vector and the activity vector Y for the training and test sets are loaded
 2. The training and test vectors are merged
 3. The subjects, the activities and their related feature vectors are merged into a single data table
